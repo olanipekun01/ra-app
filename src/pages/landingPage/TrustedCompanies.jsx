@@ -1,31 +1,58 @@
-import React from 'react'
-import logo1 from '../../assets/Logo 01.png'
-import logo2 from '../../assets/Logo 02.png'
-import logo3 from '../../assets/Logo 03.png'
-import logo4 from '../../assets/Logo 04.png'
-import logo5 from '../../assets/Logo 05.png'
-import logo6 from '../../assets/Logo 06.png'
-import '../../styles/TrustedCompanies.scss'
-const Data = [
-  {img:logo1}, {img:logo2}, {img:logo3}, {img:logo4}, {img:logo5}, {img:logo6},
-]
+import React from "react";
+import "../../styles/TrustedCompanies.scss";
+import Rectangle from "../../assets/Rectangle 130 (1).png";
+import Rectangle1 from "../../assets/Rectangle 130 (2).png";
+import Group1 from "../../assets/Rectangle 130.png";
+
 const TrustedCompanies = () => {
   return (
     <>
-    <div className="TrustedCompanies">
-     {/* <img src={bg} alt="" /> */}
-     <p>Trusted by the World's Best Company</p>
-      <div className="content">
-       {Data.map((key,value)=>(
-      <img src={key.img} key={value} alt="" />
-     ))} 
-     <p>many more</p>
+      <div className="TrustedCompanies">
+        <h1>Our Features</h1>
+
+        <div className="trustcom">
+          <div className="divtrust">
+            <div className="imgdiv">
+              <img src={Group1} alt="" />
+            </div>
+            <div className="textdiv">
+              <h3>Staff Health Management System</h3>
+              <p>
+                With our paperless ideation, leave request based on staff health
+                can be monitored and evaluated after a period of time{" "}
+              </p>
+              <a href="#">Learn Now</a>
+            </div>
+          </div>
+
+          <div className="divtrust">
+            <div className="imgdiv">
+              <img src={Rectangle} alt="" />
+            </div>
+            <div className="textdiv">
+              <h3>Single, Batch & Sorting approval of Leave Request</h3>
+              <p>
+                Leave request cam easily be sorted according to dates and time
+                and other features for single or batch approval
+              </p>
+              <a href="#"> Learn Now</a>
+            </div>
+          </div>
+
+          <div className="divtrust">
+            <div className="imgdiv">
+              <img src={Rectangle1} alt="" />
+            </div>
+            <div className="textdiv">
+              <h3>Easy Tracking of Leave Request</h3>
+              <p>Leave requested by staff can easily be monitored and feedback received immediately</p>
+              <a href="#">Learn Now</a>
+            </div>
+          </div>
+        </div>
       </div>
-
-    </div>
-  
     </>
-  )
-}
+  );
+};
 
-export default TrustedCompanies
+export default TrustedCompanies;

@@ -3,7 +3,7 @@ import "../../styles/Management.scss";
 const Management = ({ Data: { head, detail, btn, image, color } }) => {
   return (
     <>
-      <div className="management">
+      {/* <div className="management">
         <div className="imgBx">
           <img src={image} alt="" />
         </div>
@@ -12,7 +12,7 @@ const Management = ({ Data: { head, detail, btn, image, color } }) => {
           <h3>{detail}</h3>
           <button className="btn">{btn}</button>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -4,11 +4,10 @@ import Footer from './Footer';
 import Home from './Home';
 import Navbar from './Navbar';
 import TrustedCompanies from './TrustedCompanies';
-import KnowMore from './KnowMore';
 import Faq from './Faq';
 import BatchManagement from './BatchManagement';
 import Management from './Management';
-import { TrackingData, BatchData, HealthManagementData } from './data';
+import { TrackingData, BatchData } from './data';
 
 
 export default class Compile extends Component {
@@ -18,10 +17,8 @@ export default class Compile extends Component {
         <Navbar />
         <Home />
         <TrustedCompanies />
-        <Management Data={HealthManagementData} />
         <BatchManagement Data={BatchData} />
         <Management Data={TrackingData} />
-        <KnowMore />
         <Faq />
         <Footer />
       </>
